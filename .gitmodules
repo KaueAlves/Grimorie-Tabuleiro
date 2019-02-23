@@ -1,0 +1,3 @@
+[submodule "VSCode-Cpp-Init"]
+	path = VSCode-Cpp-Init
+	url = https://github.com/KaueAlves/VSCode-Cpp-Init.git
