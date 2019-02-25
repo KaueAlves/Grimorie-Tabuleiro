@@ -7,3 +7,15 @@ Posicao::Posicao(int x, int y, int z){
 }
 
 Posicao::~Posicao(){}
+
+int Posicao::getX(){
+    return this->x;
+}
+
+int Posicao::getY(){
+    return this->y;
+}
+
+int Posicao::getZ(){
+    return this->z;
+}

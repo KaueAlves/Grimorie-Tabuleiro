@@ -7,33 +7,83 @@
 using namespace std;
 
 Tabuleiro::Tabuleiro(int x, int y, int z){
-    this->tam_x = x;
-    this->tam_y = y;
-    this->tam_z = z;  
+    this->x = x;
+    this->y = y;
+    this->z = z;  
 };
 
 Tabuleiro::~Tabuleiro(){};
 
-void Tabuleiro::montarMatrix(){
-    vector<vector<vector<int>>> vetor;
-    vector<vector<int>> vetor_of_vector_bool;
-    vector<int> vetor_bool;
+int Tabuleiro::getX(){
+    return this->x;
+}
 
-    for (size_t i = 0; i < 10; i++)
+int Tabuleiro::getY(){
+    return this->y;
+}
+
+int Tabuleiro::getZ(){
+    return this->z;
+}
+
+void Tabuleiro::montarMatrix(){
+    //Matriz altura
+    vector<vector<vector<int>>> matriz_xyz;
+    vector<vector<int>> matriz_yz;
+    vector<int> matriz_z;
+    // Matriz booleana
+    vector<vector<vector<bool>>> matriz_bool_xyz;
+    vector<vector<bool>> matriz_bool_yz;
+    vector<bool> matriz_bool_z;
+
+    for (size_t i = 0; i < this->x; i++)
     {
-        for(size_t j = 0; j < 10; j++)
+        for(size_t j = 0; j < this->y; j++)
         {
-            for(size_t k = 0; k < 10; k++)
+            for(size_t k = 0; k < this->z; k++)
             {
-                vetor_bool.push_back(k);
+                matriz_z.push_back(k);
+                matriz_bool_z.push_back(false);
             }
-            vetor_of_vector_bool.push_back(vetor_bool);
-            vetor_bool.clear();
+            matriz_yz.push_back(matriz_z);
+            matriz_z.clear();
+
+            matriz_bool_yz.push_back(matriz_bool_z);
+            matriz_bool_z.clear();
         }
-        vetor.push_back(vetor_of_vector_bool);
-        vetor_of_vector_bool.clear();
+        matriz_xyz.push_back(matriz_yz);
+        matriz_yz.clear();
+
+        matriz_bool_xyz.push_back(matriz_bool_yz);
+        matriz_bool_yz.clear();
     }
-    this->tabuleiro_altura = vetor;
+    this->tabuleiro_altura = matriz_xyz;
+    this->tabuleiro_booleano = matriz_bool_xyz;
+}
+
+bool Tabuleiro::verificarCelula(Posicao pos){
+    try
+    {
+        if(this->verificarPosicaoValida(pos)){
+            return this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()];
+        }else{
+            throw 101;
+        }
+    }
+    catch (int e)
+    {
+        cout << "Posicao invalida - Posicao com X, Y, ou Z divergentes do esperado." << endl;
+    }
+   
+
+}
+
+bool Tabuleiro::verificarPosicaoValida(Posicao pos){
+    if(pos.getX() < this->x && pos.getY() < this->y && pos.getZ() < this->z ){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 void Tabuleiro::toString(){
