@@ -3,19 +3,20 @@
 #include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
+#include <memory>
 using namespace std;
 
 int main(){
 
-    Tabuleiro tab = Tabuleiro(10,2,1);
-    Posicao pos = Posicao(10,0,0);
+    unique_ptr<Tabuleiro> tab(new Tabuleiro(10,10,10));
+    unique_ptr<Posicao> pos(new Posicao(0,0,0));
 
     cout << "Tabuleiro e Posicao Criados com Sucesso" << endl;  
     
-    tab.montarMatrix();
-    tab.toString();
+    tab->montarMatrix();
+    tab->toString();
 
-    if(!tab.verificarCelula(pos)){
+    if(!tab->verificarCelula(*pos)){
         cout << "Nao tem nada" << endl;
     }
     system("Pause");

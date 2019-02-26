@@ -22,6 +22,7 @@ public:
     bool verificarCelula(Posicao pos);
     bool verificarPosicaoValida(Posicao pos);
     void toString();
+    Tabuleiro();
     Tabuleiro(int x, int y, int z);
     ~Tabuleiro();
 };

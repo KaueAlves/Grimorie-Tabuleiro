@@ -6,6 +6,12 @@
 #include <vector>
 using namespace std;
 
+Tabuleiro::Tabuleiro(){
+    this->x = 8;
+    this->y = 8;
+    this->z = 1;  
+}
+
 Tabuleiro::Tabuleiro(int x, int y, int z){
     this->x = x;
     this->y = y;
@@ -74,8 +80,6 @@ bool Tabuleiro::verificarCelula(Posicao pos){
     {
         cout << "Posicao invalida - Posicao com X, Y, ou Z divergentes do esperado." << endl;
     }
-   
-
 }
 
 bool Tabuleiro::verificarPosicaoValida(Posicao pos){
@@ -103,3 +107,4 @@ void Tabuleiro::toString(){
     }
     
 }
+
