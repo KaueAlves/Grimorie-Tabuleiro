@@ -1,28 +1,23 @@
-#include "../headers/Tabuleiro.h"
 #include "../headers/Posicao.h"
 #include "../headers/Peca.h"
-#include <stdio.h>
-#include <iostream>
-#include <stdlib.h>
-#include <vector>
-using namespace std;
+#include "../headers/default.h"
 
 Peca::Peca(){};
 
-Peca::Peca( Posicao pos, Tabuleiro tab, pair<int,int> tamanho){
+Peca::Peca( Posicao pos, pair<int,int> tamanho){
+    this->sinal = "-";
     this->pos = pos;
-    this->tab = tab;
     this->tamanho = tamanho;
 };
 
 Peca::~Peca(){}
 
-Posicao Peca::getPosicao(){
-    return this->pos;
+string Peca::toString(){
+    return this->sinal;
 }
 
-Tabuleiro Peca::getTabuleiro(){
-    return this->tab;
+Posicao Peca::getPosicao(){
+    return this->pos;
 }
 
 int Peca::getQntMaxMovimetnos(){

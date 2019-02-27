@@ -1,12 +1,9 @@
 #ifndef POSICAO_H
 #define POSICAO_H
 
-#include <vector>
-#include <stdio.h>
-#include <iostream>
-#include <stdlib.h>
-#include <vector>
-using namespace std;
+#include "default.h"
+
+
 
 class Posicao
 {

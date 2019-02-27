@@ -1,25 +1,25 @@
 #ifndef PECA_H
 #define PECA_H
 
+#include "default.h"
 #include "Posicao.h"
-#include "Tabuleiro.h"
-#include <iostream>
+
 using namespace std;
 
 class Peca
 {
 private:
+    string sinal;
     Posicao pos;
-    Tabuleiro tab;
     // Cor cor;
     int qntMovimentos, qntMaxMovimentos;
     pair<int,int> tamanho;
 public:
     Peca();
-    Peca( Posicao pos, Tabuleiro tab, pair<int,int> tamanho);
+    Peca( Posicao pos, pair<int,int> tamanho);
     ~Peca();
+    string toString();
     Posicao getPosicao();
-    Tabuleiro getTabuleiro();
     int getQntMaxMovimetnos();
     int getQntMovimentos();
     pair<int,int> getTamanho();

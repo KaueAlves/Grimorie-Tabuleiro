@@ -1,10 +1,7 @@
 #include "../headers/Tabuleiro.h"
 #include "../headers/Posicao.h"
-#include <stdio.h>
-#include <iostream>
-#include <stdlib.h>
-#include <vector>
-using namespace std;
+//#include "../headers/Peca.h"
+#include "../headers/default.h"
 
 Tabuleiro::Tabuleiro(){
     this->x = 8;
@@ -34,9 +31,9 @@ int Tabuleiro::getZ(){
 
 void Tabuleiro::montarMatrix(){
     //Matriz altura
-    vector<vector<vector<int>>> matriz_xyz;
-    vector<vector<int>> matriz_yz;
-    vector<int> matriz_z;
+    vector<vector<vector<Peca>>> matriz_xyz;
+    vector<vector<Peca>> matriz_yz;
+    vector<Peca> matriz_z;
     // Matriz booleana
     vector<vector<vector<bool>>> matriz_bool_xyz;
     vector<vector<bool>> matriz_bool_yz;
@@ -48,7 +45,7 @@ void Tabuleiro::montarMatrix(){
         {
             for(size_t k = 0; k < this->z; k++)
             {
-                matriz_z.push_back(k);
+                matriz_z.push_back(Peca(Posicao(i,j,k),make_pair(1,1)));
                 matriz_bool_z.push_back(false);
             }
             matriz_yz.push_back(matriz_z);
@@ -63,7 +60,7 @@ void Tabuleiro::montarMatrix(){
         matriz_bool_xyz.push_back(matriz_bool_yz);
         matriz_bool_yz.clear();
     }
-    this->tabuleiro_altura = matriz_xyz;
+    this->tabuleiro_peca = matriz_xyz;
     this->tabuleiro_booleano = matriz_bool_xyz;
 }
 
@@ -91,17 +88,17 @@ bool Tabuleiro::verificarPosicaoValida(Posicao pos){
 }
 
 void Tabuleiro::toString(){
-    int altura = 0;
-    for(auto&& i : this->tabuleiro_altura)
+    int level = 0;
+    for(auto&& i : this->tabuleiro_peca)
     {   
+        cout << "Level: " << ++level << endl;
         for(auto&& j : i)
         {
             for(auto&& k : j)
             {
-                altura++;
+                cout << k.toString() << " ";
             }
-            cout << altura << " ";
-            altura = 0;
+             cout << endl;
         }
         cout << endl;
     }

@@ -1,17 +1,16 @@
 #ifndef TABULEIRO_H
 #define TABULEIRO_H
 
-#include <vector>
-#include <stdio.h>
-#include <iostream>
-#include <stdlib.h>
-#include <vector>
+#include "default.h"
 #include "Posicao.h"
-using namespace std;
+#include "Peca.h"
+// #include "Peca.h"
+
 class Tabuleiro
 {
 private:
     int x,y,z;
+    vector<vector<vector<Peca>>> tabuleiro_peca;
     vector<vector<vector<int>>> tabuleiro_altura;
     vector<vector<vector<bool>>> tabuleiro_booleano;
 public:
