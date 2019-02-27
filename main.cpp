@@ -14,11 +14,22 @@ int main(){
     cout << "Tabuleiro e Posicao Criados com Sucesso" << endl;  
     
     tab->montarMatrix();
-    tab->toString();
+    cout << tab->toString() << endl;
 
-    // if(!tab->verificarCelula(*pos)){
+    tab->adicionarPeca(*pos,*escudeiro);
+    tab->adicionarPeca(Posicao(1,0,0),*escudeiro);
+    tab->adicionarPeca(Posicao(2,0,0),*escudeiro);
+    tab->adicionarPeca(Posicao(3,0,0),*escudeiro);
+    tab->adicionarPeca(Posicao(4,0,0),*escudeiro);
+    tab->adicionarPeca(Posicao(5,0,0),*escudeiro);
+    tab->adicionarPeca(Posicao(11,0,0),*escudeiro);
+
+    cout << tab->toString() << endl;
+
+    // if(!tab->verificarOcupacao(*pos)){
     //     cout << "Nao tem nada" << endl;
     // }
 
+    system("pause");
     return 0;
 }

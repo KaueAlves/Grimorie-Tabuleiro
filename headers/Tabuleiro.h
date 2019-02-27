@@ -14,16 +14,20 @@ private:
     vector<vector<vector<int>>> tabuleiro_altura;
     vector<vector<vector<bool>>> tabuleiro_booleano;
 public:
-    int getX();
-    int getY();
-    int getZ();
-    void montarMatrix();
-    bool verificarCelula(Posicao pos);
-    bool verificarPosicaoValida(Posicao pos);
-    void toString();
+     //Construtores
     Tabuleiro();
     Tabuleiro(int x, int y, int z);
     ~Tabuleiro();
+    //Gets
+    int getX();
+    int getY();
+    int getZ();
+    //Funções
+    void montarMatrix();
+    bool verificarOcupacao(Posicao pos);
+    bool verificarPosicaoValida(Posicao pos);
+    bool adicionarPeca(Posicao pos, Peca peca);
+    string toString();
 };
 
 #endif

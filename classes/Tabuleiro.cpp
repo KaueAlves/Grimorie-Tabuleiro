@@ -38,13 +38,13 @@ void Tabuleiro::montarMatrix(){
     vector<vector<bool>> matriz_bool_yz;
     vector<bool> matriz_bool_z;
 
-    for (size_t i = 0; i < this->z; i++)
+    for (register int eixo_x = 0; eixo_x < this->x; eixo_x++)
     {
-        for(size_t j = 0; j < this->y; j++)
+        for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
         {
-            for(size_t k = 0; k < this->x; k++)
+            for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
             {
-                matriz_z.push_back(Peca(Posicao(i,j,k),make_pair(1,1)));
+                matriz_z.push_back(Peca(Posicao(eixo_x,eixo_y,eixo_z),make_pair(1,1)));
                 matriz_bool_z.push_back(false);
             }
             matriz_yz.push_back(matriz_z);
@@ -63,22 +63,47 @@ void Tabuleiro::montarMatrix(){
     this->tabuleiro_booleano = matriz_bool_xyz;
 }
 
-bool Tabuleiro::verificarCelula(Posicao pos){
-    try
-    {
-        if(this->verificarPosicaoValida(pos)){
-            return this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()];
-        }else{
-            throw 101;
+/*
+*   Tabuleiro::adicionarPeca(Posicao pos, Peca peca)
+*   Param: objPosicao objPeca
+*   Return: booleano
+*   Descrição: Verifica se existe uma peça ocupando a posicao
+*/
+bool Tabuleiro::adicionarPeca(Posicao pos, Peca peca){
+    if(this->verificarOcupacao(pos)){
+        this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = true;
+        this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = peca;
+        return true;
+    }else{
+        return false;
+    }
+}
+
+/*
+*   Tabuleiro::verificarPosicaoValida(Posicao pos)
+*   Param: objPosicao
+*   Return: booleano
+*   Descrição: Verifica se a posição informada é contemplada por este tabuleiro
+*/
+bool Tabuleiro::verificarOcupacao(Posicao pos){
+    if(this->verificarPosicaoValida(pos)){
+        if(!this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()]){
+            return true; 
         }
     }
-    catch (int e)
-    {
-        cout << "Posicao invalida - Posicao com X, Y, ou Z divergentes do esperado." << endl;
-    }
+    cout << "Celula nao disponivel ou ocupada." << endl;
+    cout << "Z: " << pos.getZ() << endl;
+    cout << "X: " << pos.getX() << endl;
+    cout << "Y: " << pos.getY() << endl << endl;
     return false;
 }
 
+/*
+*   Tabuleiro::verificarPosicaoValida(Posicao pos)
+*   Param: objPosicao
+*   Return: booleano
+*   Descrição: Verifica se a posição informada é contemplada por este tabuleiro
+*/
 bool Tabuleiro::verificarPosicaoValida(Posicao pos){
     if(pos.getX() < this->x && pos.getY() < this->y && pos.getZ() < this->z ){
         return true;
@@ -87,21 +112,26 @@ bool Tabuleiro::verificarPosicaoValida(Posicao pos){
     }
 }
 
-void Tabuleiro::toString(){
+/*
+*   Tabuleiro::toString()
+*   Return @string
+*   Descrição: Para cada nivel de Z, leia as posições X e Y
+*/
+string Tabuleiro::toString(){
     int level = 0;
-    for(auto&& i : this->tabuleiro_peca)
-    {   
-        cout << "Level: " << ++level << endl;
-        for(auto&& j : i)
+    string output;
+    for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
+    {
+        output += "Level:" + to_string(++level) + "\n";
+        for(register int eixo_x = 0; eixo_x < this->x; eixo_x++)
         {
-            for(auto&& k : j)
+            for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
             {
-                cout << k.toString() << " ";
+                output += this->tabuleiro_peca[eixo_x][eixo_y][eixo_z].getSinal() + " ";
             }
-             cout << endl;
+            output += "\n";
         }
-        cout << endl;
     }
-    
+    return output;
 }
 
