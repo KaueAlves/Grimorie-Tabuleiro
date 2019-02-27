@@ -39,11 +39,11 @@ void Tabuleiro::montarMatrix(){
     vector<vector<bool>> matriz_bool_yz;
     vector<bool> matriz_bool_z;
 
-    for (size_t i = 0; i < this->x; i++)
+    for (size_t i = 0; i < this->z; i++)
     {
         for(size_t j = 0; j < this->y; j++)
         {
-            for(size_t k = 0; k < this->z; k++)
+            for(size_t k = 0; k < this->x; k++)
             {
                 matriz_z.push_back(Peca(Posicao(i,j,k),make_pair(1,1)));
                 matriz_bool_z.push_back(false);

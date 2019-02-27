@@ -5,7 +5,7 @@
 
 int main(){
 
-    unique_ptr<Tabuleiro>   tab(new Tabuleiro(10,10,10));
+    unique_ptr<Tabuleiro>   tab(new Tabuleiro(10,10,1));
     unique_ptr<Posicao>     pos(new Posicao(0,0,0));
     unique_ptr<Peca>        peca(new Peca(*pos,make_pair(1,1)));
 
