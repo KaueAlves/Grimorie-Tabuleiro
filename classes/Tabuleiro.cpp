@@ -1,7 +1,6 @@
 #include "../headers/Tabuleiro.h"
 #include "../headers/Posicao.h"
-//#include "../headers/Peca.h"
-#include "../headers/default.h"
+#include "../headers/Default.h"
 
 Tabuleiro::Tabuleiro(){
     this->x = 8;
@@ -30,11 +29,11 @@ int Tabuleiro::getZ(){
 }
 
 void Tabuleiro::montarMatrix(){
-    //Matriz altura
+    //Matriz Peca
     vector<vector<vector<Peca>>> matriz_xyz;
     vector<vector<Peca>> matriz_yz;
     vector<Peca> matriz_z;
-    // Matriz booleana
+    // Matriz Bool
     vector<vector<vector<bool>>> matriz_bool_xyz;
     vector<vector<bool>> matriz_bool_yz;
     vector<bool> matriz_bool_z;
@@ -77,6 +76,7 @@ bool Tabuleiro::verificarCelula(Posicao pos){
     {
         cout << "Posicao invalida - Posicao com X, Y, ou Z divergentes do esperado." << endl;
     }
+    return false;
 }
 
 bool Tabuleiro::verificarPosicaoValida(Posicao pos){
