@@ -2,6 +2,7 @@
 #include "../headers/Posicao.h"
 #include "../headers/Default.h"
 
+// Construtores
 Tabuleiro::Tabuleiro(){
     this->x = 8;
     this->y = 8;
@@ -16,6 +17,7 @@ Tabuleiro::Tabuleiro(int x, int y, int z){
 
 Tabuleiro::~Tabuleiro(){};
 
+//Gets
 int Tabuleiro::getX(){
     return this->x;
 }
@@ -28,6 +30,11 @@ int Tabuleiro::getZ(){
     return this->z;
 }
 
+/*
+*   Tabuleiro::adicionarPeca(Posicao pos, Peca peca)
+*   Return: null
+*   Descrição: Montagem de matriz, Booleana e Pecas
+*/
 void Tabuleiro::montarMatrix(){
     //Matriz Peca
     vector<vector<vector<Peca>>> matriz_xyz;
@@ -76,6 +83,22 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Peca peca){
         return true;
     }else{
         return false;
+    }
+}
+
+/*
+*   Tabuleiro::adicionarPeca(Posicao pos, Peca peca)
+*   Param: objPosicao objPeca
+*   Return: booleano
+*   Descrição: Verifica se existe uma peça ocupando a posicao
+*/
+Peca Tabuleiro::removerPeca(Posicao pos){
+    if(!this->verificarOcupacao(pos)){
+        this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = false;
+        auto retirada = this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = Peca();
+        return retirada;
+    }else{
+        cout << "Não existe peca nessa posição" << endl;
     }
 }
 

@@ -27,6 +27,7 @@ public:
     bool verificarOcupacao(Posicao pos);
     bool verificarPosicaoValida(Posicao pos);
     bool adicionarPeca(Posicao pos, Peca peca);
+    Peca removerPeca(Posicao pos);
     string toString();
 };
 

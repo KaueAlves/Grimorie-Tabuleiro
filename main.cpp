@@ -22,7 +22,7 @@ int main(){
     tab->adicionarPeca(Posicao(3,0,0),*escudeiro);
     tab->adicionarPeca(Posicao(4,0,0),*escudeiro);
     tab->adicionarPeca(Posicao(5,0,0),*escudeiro);
-    tab->adicionarPeca(Posicao(11,0,0),*escudeiro);
+    tab->removerPeca(Posicao(5,0,0));
 
     cout << tab->toString() << endl;
 
