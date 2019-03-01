@@ -1,5 +1,6 @@
 #include "../headers/Tabuleiro.h"
 #include "../headers/Posicao.h"
+#include "../headers/Componente.h"
 #include "../headers/Default.h"
 
 // Construtores
@@ -36,14 +37,11 @@ int Tabuleiro::getZ(){
 *   Descrição: Montagem de matriz, Booleana e Pecas
 */
 void Tabuleiro::montarMatrix(){
-    //Matriz Peca
-    vector<vector<vector<Peca>>> matriz_xyz;
-    vector<vector<Peca>> matriz_yz;
-    vector<Peca> matriz_z;
     // Matriz Bool
     vector<vector<vector<bool>>> matriz_bool_xyz;
     vector<vector<bool>> matriz_bool_yz;
     vector<bool> matriz_bool_z;
+    int id = 0;
 
     for (register int eixo_x = 0; eixo_x < this->x; eixo_x++)
     {
@@ -51,22 +49,15 @@ void Tabuleiro::montarMatrix(){
         {
             for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
             {
-                matriz_z.push_back(Peca(Posicao(eixo_x,eixo_y,eixo_z),make_pair(1,1)));
+                this->tabuleiro_componentes.insert(make_pair(std::to_string(eixo_x)+std::to_string(eixo_y)+std::to_string(eixo_z),Componente(++id,"N ")));
                 matriz_bool_z.push_back(false);
             }
-            matriz_yz.push_back(matriz_z);
-            matriz_z.clear();
-
             matriz_bool_yz.push_back(matriz_bool_z);
             matriz_bool_z.clear();
         }
-        matriz_xyz.push_back(matriz_yz);
-        matriz_yz.clear();
-
         matriz_bool_xyz.push_back(matriz_bool_yz);
         matriz_bool_yz.clear();
     }
-    this->tabuleiro_peca = matriz_xyz;
     this->tabuleiro_booleano = matriz_bool_xyz;
 }
 
@@ -79,7 +70,8 @@ void Tabuleiro::montarMatrix(){
 bool Tabuleiro::adicionarPeca(Posicao pos, Peca peca){
     if(this->verificarOcupacao(pos)){
         this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = true;
-        this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = peca;
+        this->tabuleiro_componentes.insert(make_pair(pos.to_mapkey(),peca));
+
         return true;
     }else{
         return false;
@@ -92,11 +84,10 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Peca peca){
 *   Return: booleano
 *   Descrição: Verifica se existe uma peça ocupando a posicao
 */
-Peca Tabuleiro::removerPeca(Posicao pos){
+void Tabuleiro::removerPeca(Posicao pos){
     if(!this->verificarOcupacao(pos)){
         this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = false;
-        auto retirada = this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = Peca();
-        return retirada;
+        this->tabuleiro_componentes.erase(pos.to_mapkey());
     }else{
         cout << "Não existe peca nessa posição" << endl;
     }
@@ -149,8 +140,13 @@ string Tabuleiro::toString(){
         for(register int eixo_x = 0; eixo_x < this->x; eixo_x++)
         {
             for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
-            {
-                output += this->tabuleiro_peca[eixo_x][eixo_y][eixo_z].getSinal() + " ";
+            {   
+                Posicao pos = Posicao(eixo_x,eixo_y,eixo_z);
+                if(verificarOcupacao(pos)){
+                    output += this->tabuleiro_componentes.find(pos.to_mapkey())->second.getNome();
+                }else{
+                    output += "- ";
+                }
             }
             output += "\n";
         }

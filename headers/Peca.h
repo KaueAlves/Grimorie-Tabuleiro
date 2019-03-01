@@ -3,10 +3,11 @@
 
 #include "default.h"
 #include "Posicao.h"
+#include "Componente.h"
 
 using namespace std;
 
-class Peca
+class Peca : public Componente
 {
 private:
     string sinal;

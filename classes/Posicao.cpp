@@ -1,4 +1,5 @@
 #include "../headers/Posicao.h"
+#include "../headers/Default.h"
 
 Posicao::Posicao(){
     this->x = 0;
@@ -24,4 +25,8 @@ int Posicao::getY(){
 
 int Posicao::getZ(){
     return this->z;
+}
+
+string Posicao::to_mapkey(){
+    return std::to_string(this->x)+std::to_string(this->y)+std::to_string(this->z);
 }
