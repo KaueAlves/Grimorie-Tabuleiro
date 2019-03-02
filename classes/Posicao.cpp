@@ -25,3 +25,7 @@ int Posicao::getY(){
 int Posicao::getZ(){
     return this->z;
 }
+
+string Posicao::toString(){
+    return to_string(this->x) + to_string(this->y) + to_string(this->z);
+}

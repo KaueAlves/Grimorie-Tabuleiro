@@ -1,7 +1,7 @@
 #ifndef POSICAO_H
 #define POSICAO_H
 
-#include "default.h"
+#include "Default.h"
 
 
 
@@ -16,6 +16,7 @@ public:
     int getX();
     int getY();
     int getZ();
+    string toString();
 };
 
 #endif

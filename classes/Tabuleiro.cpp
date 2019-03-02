@@ -1,6 +1,8 @@
 #include "../headers/Tabuleiro.h"
 #include "../headers/Posicao.h"
 #include "../headers/Default.h"
+#include "../headers/Peca.h"
+#include "../headers/pecas/Escudeiro.h"
 
 // Construtores
 Tabuleiro::Tabuleiro(){
@@ -30,16 +32,21 @@ int Tabuleiro::getZ(){
     return this->z;
 }
 
+map<string,Componente*> Tabuleiro::getTabComp(){
+    return this->tab_comp;    
+}
+// Sets
+
+void Tabuleiro::setTabComp(map<string, Componente*> tab_comp){
+    this->tab_comp = tab_comp;
+}
+
 /*
 *   Tabuleiro::adicionarPeca(Posicao pos, Peca peca)
 *   Return: null
 *   Descrição: Montagem de matriz, Booleana e Pecas
 */
 void Tabuleiro::montarMatrix(){
-    //Matriz Peca
-    vector<vector<vector<Peca>>> matriz_xyz;
-    vector<vector<Peca>> matriz_yz;
-    vector<Peca> matriz_z;
     // Matriz Bool
     vector<vector<vector<bool>>> matriz_bool_xyz;
     vector<vector<bool>> matriz_bool_yz;
@@ -51,22 +58,16 @@ void Tabuleiro::montarMatrix(){
         {
             for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
             {
-                matriz_z.push_back(Peca(Posicao(eixo_x,eixo_y,eixo_z),make_pair(1,1)));
                 matriz_bool_z.push_back(false);
             }
-            matriz_yz.push_back(matriz_z);
-            matriz_z.clear();
 
             matriz_bool_yz.push_back(matriz_bool_z);
             matriz_bool_z.clear();
         }
-        matriz_xyz.push_back(matriz_yz);
-        matriz_yz.clear();
 
         matriz_bool_xyz.push_back(matriz_bool_yz);
         matriz_bool_yz.clear();
     }
-    this->tabuleiro_peca = matriz_xyz;
     this->tabuleiro_booleano = matriz_bool_xyz;
 }
 
@@ -76,10 +77,10 @@ void Tabuleiro::montarMatrix(){
 *   Return: booleano
 *   Descrição: Verifica se existe uma peça ocupando a posicao
 */
-bool Tabuleiro::adicionarPeca(Posicao pos, Peca peca){
+bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
     if(this->verificarOcupacao(pos)){
         this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = true;
-        this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = peca;
+        this->tab_comp.insert(make_pair(pos.toString(),componente));
         return true;
     }else{
         return false;
@@ -92,15 +93,15 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Peca peca){
 *   Return: booleano
 *   Descrição: Verifica se existe uma peça ocupando a posicao
 */
-Peca Tabuleiro::removerPeca(Posicao pos){
-    if(!this->verificarOcupacao(pos)){
-        this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = false;
-        auto retirada = this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = Peca();
-        return retirada;
-    }else{
-        cout << "Não existe peca nessa posição" << endl;
-    }
-}
+// Peca Tabuleiro::removerPeca(Posicao pos){
+//     if(!this->verificarOcupacao(pos)){
+//         this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = false;
+//         // auto retirada = this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = Peca();
+//         return retirada;
+//     }else{
+//         cout << "Não existe peca nessa posição" << endl;
+//     }
+// }
 
 /*
 *   Tabuleiro::verificarPosicaoValida(Posicao pos)
@@ -150,7 +151,11 @@ string Tabuleiro::toString(){
         {
             for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
             {
-                output += this->tabuleiro_peca[eixo_x][eixo_y][eixo_z].getSinal() + " ";
+                if(this->tabuleiro_booleano[eixo_x][eixo_y][eixo_z]){
+                    output += definirComponente(this->tab_comp[to_string(eixo_x) + to_string(eixo_y) + to_string(eixo_z)]);
+                }else{
+                    output += "- ";
+                }
             }
             output += "\n";
         }
@@ -158,3 +163,23 @@ string Tabuleiro::toString(){
     return output;
 }
 
+
+string Tabuleiro::definirComponente(Componente* componente){
+    const Tipo_Componentes aux = componente->especializacao;
+    switch (aux)
+    {
+        case Tipo_Componentes::comp_escudeiro :
+            if(Escudeiro *ptr = dynamic_cast<Escudeiro*>(componente)){
+                return ptr->getSinal()+ " ";
+            }
+            break;
+        case Tipo_Componentes::comp_peca :
+            if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+                return ptr->getSinal() + " ";
+            }
+            break;
+        default:
+                return componente->toString()+ " ";
+            break;
+    }
+}

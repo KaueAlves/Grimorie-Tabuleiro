@@ -7,7 +7,9 @@
 #include <vector>
 #include <memory>
 #include <string>
+#include <map>
 using namespace std;
+enum Tipo_Componentes {comp_componente, comp_peca, comp_escudeiro};
 
 
 #endif

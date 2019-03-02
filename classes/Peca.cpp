@@ -4,14 +4,13 @@
 
 
 //Construtores
-Peca::Peca(){};
 
-Peca::Peca( Posicao pos, pair<int,int> tamanho){
+Peca::Peca( Posicao pos, pair<int,int> tamanho):Componente(1,"Peca","Peca"){
     this->sinal = "-";
     this->pos = pos;
     this->tamanho = tamanho;
+    this->especializacao = Tipo_Componentes::comp_peca;
 };
-
 Peca::~Peca(){}
 
 //Gets

@@ -1,12 +1,13 @@
 #ifndef PECA_H
 #define PECA_H
 
-#include "default.h"
+#include "Default.h"
 #include "Posicao.h"
+#include "Componente.h"
 
 using namespace std;
 
-class Peca
+class Peca : public Componente
 {
 private:
     string sinal;
@@ -16,9 +17,8 @@ private:
     pair<int,int> tamanho;
 public:
     //Construtor - Destruidor
-    Peca();
-    Peca( Posicao pos, pair<int,int> tamanho);
-    ~Peca();
+    Peca(Posicao pos, pair<int,int> tamanho);
+    virtual ~Peca();
     
     //Gets
     Posicao getPosicao();
