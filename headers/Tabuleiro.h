@@ -33,7 +33,7 @@ public:
     bool verificarPosicaoValida(Posicao pos);
     bool adicionarPeca(Posicao pos, Componente *componente);
     string definirComponente(Componente* componente);
-    Peca removerPeca(Posicao pos);
+    bool removerPeca(Posicao pos);
     string toString();
 };
 

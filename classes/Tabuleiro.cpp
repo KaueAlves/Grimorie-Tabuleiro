@@ -52,7 +52,6 @@ void Tabuleiro::montarMatrix(){
     vector<vector<vector<bool>>> matriz_bool_xyz;
     vector<vector<bool>> matriz_bool_yz;
     vector<bool> matriz_bool_z;
-    int id = 0;
 
     for (register int eixo_x = 0; eixo_x < this->x; eixo_x++)
     {
@@ -95,15 +94,16 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
 *   Return: booleano
 *   Descrição: Verifica se existe uma peça ocupando a posicao
 */
-// Peca Tabuleiro::removerPeca(Posicao pos){
-//     if(!this->verificarOcupacao(pos)){
-//         this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = false;
-//         // auto retirada = this->tabuleiro_peca[pos.getX()][pos.getY()][pos.getZ()] = Peca();
-//         return retirada;
-//     }else{
-//         cout << "Não existe peca nessa posição" << endl;
-//     }
-// }
+bool Tabuleiro::removerPeca(Posicao pos){
+    if(!this->verificarOcupacao(pos)){
+        this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = false;
+        this->tab_comp.erase(pos.toString());
+        return true;
+    }else{
+        cout << "Não existe peca nessa posição" << endl;
+        return false;
+    }
+}
 
 /*
 *   Tabuleiro::verificarPosicaoValida(Posicao pos)
@@ -117,10 +117,10 @@ bool Tabuleiro::verificarOcupacao(Posicao pos){
             return true; 
         }
     }
-    cout << "Celula nao disponivel ou ocupada." << endl;
-    cout << "Z: " << pos.getZ() << endl;
-    cout << "X: " << pos.getX() << endl;
-    cout << "Y: " << pos.getY() << endl << endl;
+    // cout << "Celula nao disponivel ou ocupada." << endl;
+    // cout << "Z: " << pos.getZ() << endl;
+    // cout << "X: " << pos.getX() << endl;
+    // cout << "Y: " << pos.getY() << endl << endl;
     return false;
 }
 
