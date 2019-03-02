@@ -3,6 +3,7 @@
 
 #include "Default.h"
 #include "Posicao.h"
+#include "Componente.h"
 #include "Peca.h"
 #include "Componente.h"
 

@@ -1,4 +1,5 @@
 #include "../headers/Posicao.h"
+#include "../headers/Default.h"
 
 Posicao::Posicao(){
     this->x = 0;

@@ -3,16 +3,16 @@
 
 #include "Default.h"
 
-
-
 class Posicao
 {
 private:
     int x,y,z;
 public:
+    // Construtores
     Posicao();
     Posicao(int x, int y, int z);
     ~Posicao();
+    // Gets
     int getX();
     int getY();
     int getZ();

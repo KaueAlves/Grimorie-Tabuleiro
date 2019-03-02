@@ -1,5 +1,6 @@
 #include "../headers/Tabuleiro.h"
 #include "../headers/Posicao.h"
+#include "../headers/Componente.h"
 #include "../headers/Default.h"
 #include "../headers/Peca.h"
 #include "../headers/pecas/Escudeiro.h"
@@ -51,6 +52,7 @@ void Tabuleiro::montarMatrix(){
     vector<vector<vector<bool>>> matriz_bool_xyz;
     vector<vector<bool>> matriz_bool_yz;
     vector<bool> matriz_bool_z;
+    int id = 0;
 
     for (register int eixo_x = 0; eixo_x < this->x; eixo_x++)
     {
