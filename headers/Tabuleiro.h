@@ -11,10 +11,14 @@ class Tabuleiro
 {
 private:
     int x,y,z;
-    map<string,Componente*> tab_comp;
+    map<string, Componente*> tab_comp;
+    map<string, Peca*> tab_pecas;
+    //map<string, Terrenos*> tab_terrenos;
+    //map<string, Obstaculos*> tab_obstaculos;
+    //map<string, Item> tab_itens;
     vector<vector<vector<Peca>>> tabuleiro_peca;
     vector<vector<vector<int>>> tabuleiro_altura;
-    vector<vector<vector<bool>>> tabuleiro_booleano;
+    vector<vector<vector<int>>> tabuleiro_tipo_componentes;
 public:
      //Construtores
     Tabuleiro();

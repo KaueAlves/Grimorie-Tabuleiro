@@ -49,9 +49,9 @@ void Tabuleiro::setTabComp(map<string, Componente*> tab_comp){
 */
 void Tabuleiro::montarMatrix(){
     // Matriz Bool
-    vector<vector<vector<bool>>> matriz_bool_xyz;
-    vector<vector<bool>> matriz_bool_yz;
-    vector<bool> matriz_bool_z;
+    vector<vector<vector<int>>> matriz_tipos_xyz;
+    vector<vector<int>> matriz_tipos_yz;
+    vector<int> matriz_tipos_z;
 
     for (register int eixo_x = 0; eixo_x < this->x; eixo_x++)
     {
@@ -59,17 +59,17 @@ void Tabuleiro::montarMatrix(){
         {
             for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
             {
-                matriz_bool_z.push_back(false);
+                matriz_tipos_z.push_back(0);
             }
 
-            matriz_bool_yz.push_back(matriz_bool_z);
-            matriz_bool_z.clear();
+            matriz_tipos_yz.push_back(matriz_tipos_z);
+            matriz_tipos_z.clear();
         }
 
-        matriz_bool_xyz.push_back(matriz_bool_yz);
-        matriz_bool_yz.clear();
+        matriz_tipos_xyz.push_back(matriz_tipos_yz);
+        matriz_tipos_yz.clear();
     }
-    this->tabuleiro_booleano = matriz_bool_xyz;
+    this->tabuleiro_tipo_componentes = matriz_tipos_xyz;
 }
 
 /*
@@ -80,7 +80,7 @@ void Tabuleiro::montarMatrix(){
 */
 bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
     if(this->verificarOcupacao(pos)){
-        this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = true;
+        this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = componente->especializacao;
         this->tab_comp.insert(make_pair(pos.toString(),componente));
         return true;
     }else{
@@ -96,7 +96,7 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
 */
 bool Tabuleiro::removerPeca(Posicao pos){
     if(!this->verificarOcupacao(pos)){
-        this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()] = false;
+        this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = 0;
         this->tab_comp.erase(pos.toString());
         return true;
     }else{
@@ -113,7 +113,8 @@ bool Tabuleiro::removerPeca(Posicao pos){
 */
 bool Tabuleiro::verificarOcupacao(Posicao pos){
     if(this->verificarPosicaoValida(pos)){
-        if(!this->tabuleiro_booleano[pos.getX()][pos.getY()][pos.getZ()]){
+        int aux = this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()];
+        if(aux == 0){
             return true; 
         }
     }
@@ -153,7 +154,7 @@ string Tabuleiro::toString(){
         {
             for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
             {
-                if(this->tabuleiro_booleano[eixo_x][eixo_y][eixo_z]){
+                if(this->tabuleiro_tipo_componentes[eixo_x][eixo_y][eixo_z]){
                     output += definirComponente(this->tab_comp[to_string(eixo_x) + to_string(eixo_y) + to_string(eixo_z)]);
                 }else{
                     output += "- ";
