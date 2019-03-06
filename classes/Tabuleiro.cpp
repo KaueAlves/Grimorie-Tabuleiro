@@ -82,6 +82,7 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
     if(this->verificarOcupacao(pos)){
         this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = componente->especializacao;
         this->tab_comp.insert(make_pair(pos.toString(),componente));
+        adicionarMapEspecifico(componente);
         return true;
     }else{
         return false;
@@ -97,6 +98,7 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
 bool Tabuleiro::removerPeca(Posicao pos){
     if(!this->verificarOcupacao(pos)){
         this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = 0;
+        removerMapEspecifico(tab_comp[pos.toString()]);
         this->tab_comp.erase(pos.toString());
         return true;
     }else{
@@ -183,6 +185,66 @@ string Tabuleiro::definirComponente(Componente* componente){
             break;
         default:
                 return componente->toString()+ " ";
+            break;
+    }
+}
+
+void Tabuleiro::adicionarMapEspecifico(Componente* componente){
+    const Tipo_Componentes aux = componente->especializacao;
+    switch (aux)
+    {
+        case Tipo_Componentes::comp_peca :
+            if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+                this->tab_pecas.insert(make_pair(componente->getPosicao().toString(),ptr));
+            }
+            break;
+        // case Tipo_Componentes::comp_itens :
+        //     if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+        //         this->tab_itens.insert(make_pair(componente->getPosicao().toString(),ptr));
+        //     }
+        //     break;
+        // case Tipo_Componentes::comp_obstaculos :
+        //     if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+        //         this->tab_obstaculos.insert(make_pair(componente->getPosicao().toString(),ptr));
+        //     }
+        //     break;
+        // case Tipo_Componentes::comp_terrenos :
+        //     if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+        //         this->tab_terrenos.insert(make_pair(componente->getPosicao().toString(),ptr));
+        //     }
+        //     break;
+        default:
+                this->tab_comp.insert(make_pair(componente->getPosicao().toString(),componente));
+            break;
+    }
+}
+
+void Tabuleiro::removerMapEspecifico(Componente* componente){
+    const Tipo_Componentes aux = componente->especializacao;
+    switch (aux)
+    {
+        case Tipo_Componentes::comp_peca :
+            if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+                this->tab_pecas.erase(ptr->getPosicao().toString());
+            }
+            break;
+        // case Tipo_Componentes::comp_itens :
+        //     if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+        //         this->tab_itens.erase(ptr->getPosicao().toString());
+        //     }
+        //     break;
+        // case Tipo_Componentes::comp_obstaculos :
+        //     if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+        //         this->tab_obstaculos.erase(ptr->getPosicao().toString());
+        //     }
+        //     break;
+        // case Tipo_Componentes::comp_terrenos :
+        //     if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+        //         this->tab_terrenos.erase(ptr->getPosicao().toString());
+        //     }
+        //     break;
+        default:
+                this->tab_comp.erase(componente->getPosicao().toString());
             break;
     }
 }

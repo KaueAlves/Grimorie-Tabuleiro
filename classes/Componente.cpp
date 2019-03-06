@@ -20,6 +20,10 @@ string Componente::getTipo(){
     return this->tipo;
 }
 
+Posicao Componente::getPosicao(){
+    return this->pos;
+}
+
 void Componente::setID(int id){
     this->id = id;
 }

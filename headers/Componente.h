@@ -2,13 +2,15 @@
 #define COMPONENTE_H
 
 #include "Default.h"
+#include "Posicao.h"
 
 class Componente
 {
-private:
+protected:
     int id;
     string nome;
     string tipo;
+    Posicao pos;
 public:
     Tipo_Componentes especializacao;
     // Construtores
@@ -18,6 +20,7 @@ public:
     int getID();
     string getNome();
     string getTipo();
+    Posicao getPosicao();
     // Sets
     void setID(int id);
     void setNome(string nome);

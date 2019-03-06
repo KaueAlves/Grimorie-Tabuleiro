@@ -13,9 +13,9 @@ private:
     int x,y,z;
     map<string, Componente*> tab_comp;
     map<string, Peca*> tab_pecas;
-    //map<string, Terrenos*> tab_terrenos;
-    //map<string, Obstaculos*> tab_obstaculos;
-    //map<string, Item> tab_itens;
+    // map<string, Terrenos*> tab_terrenos;
+    // map<string, Obstaculos*> tab_obstaculos;
+    // map<string, Item> tab_itens;
     vector<vector<vector<Peca>>> tabuleiro_peca;
     vector<vector<vector<int>>> tabuleiro_altura;
     vector<vector<vector<int>>> tabuleiro_tipo_componentes;
@@ -37,6 +37,8 @@ public:
     bool verificarPosicaoValida(Posicao pos);
     bool adicionarPeca(Posicao pos, Componente *componente);
     string definirComponente(Componente* componente);
+    void adicionarMapEspecifico(Componente* componente);
+    void removerMapEspecifico(Componente* componente);
     bool removerPeca(Posicao pos);
     string toString();
 };
