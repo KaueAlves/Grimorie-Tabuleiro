@@ -152,7 +152,7 @@ string Tabuleiro::toString(){
         {
             for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
             {
-                if(this->tabuleiro_tipo_componentes[eixo_x][eixo_y][eixo_z]){
+                if(this->tabuleiro_tipo_componentes[eixo_x][eixo_y][eixo_z] > 0){
                     output += definirComponente(this->tab_comp[to_string(eixo_x) + to_string(eixo_y) + to_string(eixo_z)]);
                 }else{
                     output += "- ";
@@ -169,14 +169,9 @@ string Tabuleiro::definirComponente(Componente* componente){
     const Tipo_Componentes aux = componente->especializacao;
     switch (aux)
     {
-        case Tipo_Componentes::comp_escudeiro :
-            if(Escudeiro *ptr = dynamic_cast<Escudeiro*>(componente)){
-                return ptr->getMark()+ " ";
-            }
-            break;
         case Tipo_Componentes::comp_peca :
             if(Peca *ptr = dynamic_cast<Peca*>(componente)){
-                return ptr->getMark() + " ";
+                return ptr->toString() + " ";
             }
             break;
         default:

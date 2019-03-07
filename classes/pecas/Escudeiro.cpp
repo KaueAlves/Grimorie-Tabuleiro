@@ -10,10 +10,10 @@ Escudeiro::Escudeiro(pair<int,int> tamanho):Peca(tamanho){
     this->setQntMovimentos(0);
     
     this->setMark("K");
-    this->especializacao = Tipo_Componentes::comp_escudeiro;
+    this->especializacao = Tipo_Componentes::comp_peca;
 }
 
 //Funções
-string Escudeiro::toString(){
-    return this->getMark();
-}
+// string Escudeiro::toString(){
+//     return this->getMark() + "AEEEEEe";
+// }

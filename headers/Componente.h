@@ -34,7 +34,7 @@ public:
     void setTamanho(pair<int,int> tamanho);
     void setMark(string mark);
     // Funçoes
-    string toString();
+    virtual string toString();
 };
 
 
