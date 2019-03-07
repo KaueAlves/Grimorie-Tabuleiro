@@ -6,6 +6,7 @@
 #include "Componente.h"
 #include "Peca.h"
 #include "Componente.h"
+#include "Terreno.h"
 
 class Tabuleiro
 {
@@ -13,7 +14,7 @@ private:
     int x,y,z;
     map<string, Componente*> tab_comp;
     map<string, Peca*> tab_pecas;
-    // map<string, Terrenos*> tab_terrenos;
+    map<string, Terreno*> tab_terrenos;
     // map<string, Obstaculos*> tab_obstaculos;
     // map<string, Item> tab_itens;
     vector<vector<vector<Peca>>> tabuleiro_peca;

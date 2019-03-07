@@ -1,5 +1,6 @@
 #include "../headers/Tabuleiro.h"
 #include "../headers/Posicao.h"
+#include "../headers/Terreno.h"
 #include "../headers/Componente.h"
 #include "../headers/Default.h"
 #include "../headers/Peca.h"
@@ -174,6 +175,11 @@ string Tabuleiro::definirComponente(Componente* componente){
                 return ptr->toString() + " ";
             }
             break;
+        case Tipo_Componentes::comp_terreno :
+        if(Terreno *ptr = dynamic_cast<Terreno*>(componente)){
+            return ptr->toString() + " ";
+        }
+        break;
         default:
                 return componente->toString()+ " ";
             break;
@@ -199,11 +205,11 @@ void Tabuleiro::adicionarMapEspecifico(Componente* componente){
         //         this->tab_obstaculos.insert(make_pair(componente->getPosicao().toString(),ptr));
         //     }
         //     break;
-        // case Tipo_Componentes::comp_terrenos :
-        //     if(Peca *ptr = dynamic_cast<Peca*>(componente)){
-        //         this->tab_terrenos.insert(make_pair(componente->getPosicao().toString(),ptr));
-        //     }
-        //     break;
+        case Tipo_Componentes::comp_terreno :
+            if(Terreno *ptr = dynamic_cast<Terreno*>(componente)){
+                this->tab_terrenos.insert(make_pair(componente->getPosicao().toString(),ptr));
+            }
+            break;
         default:
                 this->tab_comp.insert(make_pair(componente->getPosicao().toString(),componente));
             break;
