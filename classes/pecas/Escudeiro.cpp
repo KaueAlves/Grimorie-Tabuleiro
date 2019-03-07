@@ -14,6 +14,6 @@ Escudeiro::Escudeiro(pair<int,int> tamanho):Peca(tamanho){
 }
 
 //Funções
-// string Escudeiro::toString(){
-//     return this->getMark() + "AEEEEEe";
-// }
+string Escudeiro::toString(){
+    return this->getMark();
+}

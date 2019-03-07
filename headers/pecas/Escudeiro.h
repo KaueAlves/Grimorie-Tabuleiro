@@ -12,7 +12,7 @@ public:
     Escudeiro();
     ~Escudeiro();
     Escudeiro(pair<int,int> tamanho);
-    // string toString();
+    string toString();
 };
 
 #endif
