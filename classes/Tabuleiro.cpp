@@ -75,6 +75,7 @@ void Tabuleiro::montarMatrix(){
 */
 bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
     if(this->verificarOcupacao(pos)){
+        componente->setPosicao(pos);
         this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = componente->especializacao;
         this->tab_comp.insert(make_pair(pos.toString(),componente));
         adicionarMapEspecifico(componente);
@@ -170,12 +171,12 @@ string Tabuleiro::definirComponente(Componente* componente){
     {
         case Tipo_Componentes::comp_escudeiro :
             if(Escudeiro *ptr = dynamic_cast<Escudeiro*>(componente)){
-                return ptr->getSinal()+ " ";
+                return ptr->getMark()+ " ";
             }
             break;
         case Tipo_Componentes::comp_peca :
             if(Peca *ptr = dynamic_cast<Peca*>(componente)){
-                return ptr->getSinal() + " ";
+                return ptr->getMark() + " ";
             }
             break;
         default:
