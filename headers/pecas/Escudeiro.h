@@ -11,7 +11,7 @@ private:
 public:
     Escudeiro();
     ~Escudeiro();
-    Escudeiro(Posicao pos, pair<int,int> tamanho);
+    Escudeiro(pair<int,int> tamanho);
     string toString();
 };
 

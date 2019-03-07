@@ -5,7 +5,7 @@
 
 //Construtores 
 Escudeiro::~Escudeiro(){}
-Escudeiro::Escudeiro(Posicao pos, pair<int,int> tamanho):Peca(pos,tamanho){
+Escudeiro::Escudeiro(pair<int,int> tamanho):Peca(tamanho){
     this->setQntMaxMovimentos(3);
     this->setQntMovimentos(0);
     this->setSinal("K");

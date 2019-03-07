@@ -7,7 +7,7 @@
 int main(){
 
     shared_ptr<Tabuleiro>   tab( new Tabuleiro( 10,10,1 ) );
-    Escudeiro* escudeiro = new Escudeiro( Posicao( 1,0,0 ),make_pair( 1, 1 ));
+    Escudeiro* escudeiro = new Escudeiro(make_pair( 1, 1 ));
     
     tab->montarMatrix();
     cout << tab->toString() << endl;

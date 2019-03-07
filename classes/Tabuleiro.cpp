@@ -42,11 +42,6 @@ void Tabuleiro::setTabComp(map<string, Componente*> tab_comp){
     this->tab_comp = tab_comp;
 }
 
-/*
-*   Tabuleiro::adicionarPeca(Posicao pos, Peca peca)
-*   Return: null
-*   Descrição: Montagem de matriz, Booleana e Pecas
-*/
 void Tabuleiro::montarMatrix(){
     // Matriz Bool
     vector<vector<vector<int>>> matriz_tipos_xyz;

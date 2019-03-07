@@ -17,7 +17,7 @@ private:
     pair<int,int> tamanho;
 public:
     //Construtor - Destruidor
-    Peca(Posicao pos, pair<int,int> tamanho);
+    Peca(pair<int,int> tamanho);
     virtual ~Peca();
     
     //Gets

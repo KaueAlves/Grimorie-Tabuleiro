@@ -5,7 +5,7 @@
 
 //Construtores
 
-Peca::Peca( Posicao pos, pair<int,int> tamanho):Componente(1,"Peca","Peca"){
+Peca::Peca(pair<int,int> tamanho):Componente(1,"Peca","Peca"){
     this->sinal = "-";
     this->pos = pos;
     this->tamanho = tamanho;
