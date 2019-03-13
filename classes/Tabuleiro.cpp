@@ -184,6 +184,7 @@ string Tabuleiro::definirComponente(Componente* componente){
                 return componente->toString()+ " ";
             break;
     }
+    return "X";
 }
 
 void Tabuleiro::adicionarMapEspecifico(Componente* componente){

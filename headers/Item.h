@@ -12,7 +12,7 @@ private:
 public:
     Item(/* args */);
     ~Item();
-    // Funçõe
+    // Funções
     string toString();
 };
 

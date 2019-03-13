@@ -4,14 +4,18 @@
 #include "Default.h"
 #include "Posicao.h"
 #include "Componente.h"
+#include "Atributos.h"
+#include "Info.h"
 
 using namespace std;
 
 class Peca : public Componente
 {
 private:
-    // Cor cor;
     int qntMovimentos, qntMaxMovimentos;
+    Info info;
+    
+    Atributos atributos;
 public:
     //Construtor - Destruidor
     Peca(pair<int,int> tamanho);
