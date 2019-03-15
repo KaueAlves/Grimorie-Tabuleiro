@@ -14,7 +14,6 @@ class Peca : public Componente
 private:
     int qntMovimentos, qntMaxMovimentos;
     Info info;
-    
     Atributos atributos;
 public:
     //Construtor - Destruidor
@@ -31,6 +30,7 @@ public:
 
 
     //Funções
+    bool movimentosPossiveis(Posicao pos);
     string toString();
 };
 
