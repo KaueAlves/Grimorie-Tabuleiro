@@ -14,7 +14,7 @@ class Peca : public Componente
 private:
     int qntMovimentos, qntMaxMovimentos;
     Info info;
-    Atributos atributos;
+    //          Atributos atributos;
 public:
     //Construtor - Destruidor
     Peca(pair<int,int> tamanho);

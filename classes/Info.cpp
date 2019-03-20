@@ -1,5 +1,5 @@
 #include "../headers/Info.h"
-#include "default.h"
+#include "../headers/default.h"
 
 Info::Info(){};
 Info::~Info(){};
@@ -25,21 +25,21 @@ char Info::getSexo(){
 }
 
 void Info::setNome( string nome ){
-    this->nome;
+    this->nome = nome;
 }
 
 void Info::setIdade( int idade ){
-    this->idade;
+    this->idade = idade;
 }
 
 void Info::setClasse( string classe ){
-    this->classe;
+    this->classe = classe;
 }
 
 void Info::setLore( string lore ){
-    this->classe;
+    this->lore = lore;
 }
 
 void Info::setSexo( char sexo ){
-    this->sexo;
+    this->sexo = sexo; 
 }

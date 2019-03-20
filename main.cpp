@@ -9,22 +9,44 @@
 int main(){
 
     shared_ptr<Tabuleiro>   tab( new Tabuleiro( 10,10,1 ) );
-    Escudeiro* escudeiro = new Escudeiro(make_pair( 1, 1 ));
-    Terreno* terreno1 = new Terreno();
-    
+    short int x,y,z,opt = 0;
     tab->montarMatrix();
-    cout << tab->toString() << endl;
+ 
+    do
+    {
+        Posicao posaux = Posicao(x,y,z); 
+        cout << "Escolha uma das opcoes. " << endl; 
+        cout << "Menu: " << endl;
+        cout << endl;
+        cout << "1 - Colocar peca" << endl;
+        cout << "2 - Ver tabuleiro" << endl;
+        cout << "3 - Remover peca" << endl;
+        cin >> opt;
 
-    // tab->adicionarPeca(*pos,*escudeiro);
-    tab->adicionarPeca( Posicao(0,0,0), terreno1 );
-    tab->adicionarPeca( Posicao(1,0,0), escudeiro );
-    tab->adicionarPeca( Posicao(2,0,0), escudeiro );
-    tab->adicionarPeca( Posicao(3,0,0), escudeiro );
-    tab->adicionarPeca( Posicao(4,0,0), escudeiro );
-    tab->adicionarPeca( Posicao(5,0,0), escudeiro );
-    tab->removerPeca(Posicao(5,0,0));
+        switch(opt)
+        {
+            case 1:
+                cin >> x >> y >> z;
+                posaux = Posicao(x,y,z);
+                tab->adicionarPeca(posaux,new Peca(make_pair(1,1)));
+                cout << "Voce colocou uma peca" << endl;
+                break;
+            case 2: 
+                cout << tab->toString() << endl;
+                break;
+            case 3: 
+                cout << "Voce retirou uma peca" << endl;  
+                break;
+            default:
+                cout << "Fechando programa" << endl;
+                break;
+        }
 
-    cout << tab->toString() << endl;
+
+
+
+    } while (opt != 0);
+    
 
     system("pause");
     return 0;

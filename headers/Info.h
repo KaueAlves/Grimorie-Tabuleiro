@@ -1,7 +1,7 @@
 #if !defined(INFO_H)
 #define INFO_H
 
-#include "default.h"
+#include "Default.h"
 
 class Info
 {
