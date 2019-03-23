@@ -40,6 +40,7 @@ public:
     string definirComponente(Componente* componente);
     void adicionarMapEspecifico(Componente* componente);
     void removerMapEspecifico(Componente* componente);
+    Componente* verificarPeca(Posicao pos);
     bool removerPeca(Posicao pos);
     string toString();
 };

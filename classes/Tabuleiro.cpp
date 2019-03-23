@@ -82,15 +82,16 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
         adicionarMapEspecifico(componente);
         return true;
     }else{
+        cout << "Nao foi possivel adicionar uma peca na posicao " << pos.toString() << endl;
         return false;
     }
 }
 
 /*
-*   Tabuleiro::adicionarPeca(Posicao pos, Peca peca)
-*   Param: objPosicao objPeca
+*   Tabuleiro::removerPeca(Posicao pos)
+*   Param: objPosicao
 *   Return: booleano
-*   Descrição: Verifica se existe uma peça ocupando a posicao
+*   Descrição: remove uma peca do tabuleiro
 */
 bool Tabuleiro::removerPeca(Posicao pos){
     if(!this->verificarOcupacao(pos)){
@@ -105,7 +106,21 @@ bool Tabuleiro::removerPeca(Posicao pos){
 }
 
 /*
-*   Tabuleiro::verificarPosicaoValida(Posicao pos)
+*   Tabuleiro::removerPeca(Posicao pos)
+*   Param: objPosicao
+*   Return: booleano
+*   Descrição: verifica uma peca no tabuleiro
+*/
+Componente* Tabuleiro::verificarPeca(Posicao pos){
+    if(!this->verificarOcupacao(pos)){
+        return this->tab_comp[to_string(pos.getX())+to_string(pos.getY())+to_string(pos.getZ())];
+    }else{
+        return NULL;
+    }
+}
+
+/*
+*   Tabuleiro::verificarOcupacao(Posicao pos)
 *   Param: objPosicao
 *   Return: booleano
 *   Descrição: Verifica se a posição informada é contemplada por este tabuleiro

@@ -11,16 +11,18 @@ int main(){
     shared_ptr<Tabuleiro>   tab( new Tabuleiro( 10,10,1 ) );
     short int x,y,z,opt = 0;
     tab->montarMatrix();
+    Componente* comp;
  
     do
     {
         Posicao posaux = Posicao(x,y,z); 
-        cout << "Escolha uma das opcoes. " << endl; 
+        cout << endl << "Escolha uma das opcoes. " << endl; 
         cout << "Menu: " << endl;
         cout << endl;
         cout << "1 - Colocar peca" << endl;
         cout << "2 - Ver tabuleiro" << endl;
         cout << "3 - Remover peca" << endl;
+        cout << "4 - Verificar peca" << endl;
         cin >> opt;
 
         switch(opt)
@@ -35,19 +37,21 @@ int main(){
                 cout << tab->toString() << endl;
                 break;
             case 3: 
+                cin >> x >> y >> z;
+                posaux = Posicao(x,y,z);
+                tab->removerPeca(posaux);
                 cout << "Voce retirou uma peca" << endl;  
+                break;
+            case 4:
+                cin >> x >> y >> z;
+                posaux = Posicao(x,y,z);
+                comp = tab->verificarPeca(posaux);
                 break;
             default:
                 cout << "Fechando programa" << endl;
                 break;
         }
-
-
-
-
     } while (opt != 0);
     
-
-    system("pause");
     return 0;
 }
