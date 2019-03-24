@@ -23,6 +23,7 @@ int main(){
         cout << "2 - Ver tabuleiro" << endl;
         cout << "3 - Remover peca" << endl;
         cout << "4 - Verificar peca" << endl;
+        cout << "0 - Fechar" << endl;
         cin >> opt;
 
         switch(opt)
@@ -43,15 +44,21 @@ int main(){
                 cout << "Voce retirou uma peca" << endl;  
                 break;
             case 4:
+                cout << endl << "Qual posicao deseja verificar ?";
                 cin >> x >> y >> z;
                 posaux = Posicao(x,y,z);
                 comp = tab->verificarPeca(posaux);
+                
                 break;
             default:
                 cout << "Fechando programa" << endl;
                 break;
         }
+        cout << endl;
+        system("pause");
+        system("cls");
     } while (opt != 0);
     
     return 0;
 }
+
