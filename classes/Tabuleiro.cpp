@@ -93,20 +93,38 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
 *   Return: booleano
 *   Descrição: remove uma peca do tabuleiro
 */
-bool Tabuleiro::removerPeca(Posicao pos){
+Componente* Tabuleiro::removerPeca(Posicao pos){
     if(!this->verificarOcupacao(pos)){
+        Componente* peca = this->tab_comp[pos.toString()];
         this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = 0;
         removerMapEspecifico(tab_comp[pos.toString()]);
         this->tab_comp.erase(pos.toString());
-        return true;
+        return peca;
     }else{
         cout << "Não existe peca nessa posição" << endl;
-        return false;
+        return NULL;
     }
 }
 
 /*
-*   Tabuleiro::removerPeca(Posicao pos)
+*   Tabuleiro::moverPeca(Posicao pos)
+*   Param: objPosicao
+*   Return: booleano
+*   Descrição: remove uma peca do tabuleiro
+*/
+bool Tabuleiro::moverPeca(Posicao ini, Posicao end){
+    if(!this->verificarOcupacao(ini)){
+        Componente* comp_aux = this->removerPeca(ini);
+        adicionarPeca(end,comp_aux);
+        return true;
+    }else{
+        cout << endl <<  "Nao existe uma peca a ser movida" << endl;
+    }
+    return false;
+}
+
+/*
+*   Tabuleiro::verificarPeca(Posicao pos)
 *   Param: objPosicao
 *   Return: booleano
 *   Descrição: verifica uma peca no tabuleiro

@@ -33,6 +33,10 @@ void Peca::setQntMovimentos(int qntMovimentos){
 
 //Funções 
 
+bool movimentosPossiveis(Posicao pos){
+    return false;
+}
+
 string Peca::toString(){
     return this->mark;
 }

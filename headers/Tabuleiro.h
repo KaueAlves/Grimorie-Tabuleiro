@@ -37,11 +37,13 @@ public:
     bool verificarOcupacao(Posicao pos);
     bool verificarPosicaoValida(Posicao pos);
     bool adicionarPeca(Posicao pos, Componente *componente);
+    Componente* removerPeca(Posicao pos);
+    bool moverPeca(Posicao ini, Posicao end);
     string definirComponente(Componente* componente);
     void adicionarMapEspecifico(Componente* componente);
     void removerMapEspecifico(Componente* componente);
     Componente* verificarPeca(Posicao pos);
-    bool removerPeca(Posicao pos);
+
     string toString();
 };
 
