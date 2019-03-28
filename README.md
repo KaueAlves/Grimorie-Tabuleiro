@@ -44,18 +44,18 @@ Todas as pecas tem os seguintes atributos:
 
 O tabuleiro do jogo é simples, os campos " X " e " O " representam as posições inicias dos jogadores 1 e 2 respectivamente, enquanto o " - " representa o campo de batalha. 
 
-X X X        
-X X X
-t t t
-t t t 
-t t t
-t t t 
-t t t
-t t t  
-t t t
-t t t 
-O O O
-O O O
+    X X X        
+    X X X
+    - - -
+    - - - 
+    - - -
+    - - -
+    - - - 
+    - - -
+    - - - 
+    - - -
+    O O O
+    O O O
 
 ## Etapas do jogo
 
