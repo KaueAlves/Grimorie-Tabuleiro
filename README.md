@@ -68,7 +68,9 @@ O tabuleiro do jogo é simples, os campos " X " e " O " representam as posiçõe
     4  - Jogador2 coloca as pecas em campo
 
     <!-- O ideal é que as etapas acima sejam ocultas entre jogadores -->
+
     5  - Ambos confirmam as escolhas
+    
     <!-- Inicio -->
     6  - Verifica se existem pecas em campo
 
