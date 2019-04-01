@@ -1,6 +1,7 @@
 #include "../headers/Posicao.h"
 #include "../headers/Peca.h"
 #include "../headers/Default.h"
+#include "../headers/Atributos.h"
 
 
 //Construtores
@@ -20,6 +21,10 @@ int Peca::getQntMaxMovimetnos(){
 
 int Peca::getQntMovimentos(){
     return this->qntMovimentos;
+}
+
+Info Peca::getInfo(){
+    return this->info;
 }
 
 //Sets
