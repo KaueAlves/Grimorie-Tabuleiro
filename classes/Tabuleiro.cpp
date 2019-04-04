@@ -4,7 +4,7 @@
 #include "../headers/Componente.h"
 #include "../headers/Default.h"
 #include "../headers/Peca.h"
-#include "../headers/pecas/Escudeiro.h"
+#include "../headers/pecas/Guerreiro.h"
 
 // Construtores
 Tabuleiro::Tabuleiro(){

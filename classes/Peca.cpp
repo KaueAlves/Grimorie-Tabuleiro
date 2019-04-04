@@ -27,6 +27,10 @@ Info Peca::getInfo(){
     return this->info;
 }
 
+Atributos* Peca::getAtributos(){
+    return &this->atributos;
+}
+
 //Sets
 
 void Peca::setQntMaxMovimentos(int qntMaxMovimentos){
@@ -34,6 +38,10 @@ void Peca::setQntMaxMovimentos(int qntMaxMovimentos){
 }
 void Peca::setQntMovimentos(int qntMovimentos){
     this->qntMovimentos = qntMovimentos;
+}
+
+void Peca::setAtributos(Atributos atb){
+    this->atributos = atb;
 }
 
 //Funções 

@@ -24,10 +24,12 @@ public:
     int getQntMaxMovimetnos();
     int getQntMovimentos();
     Info getInfo();
+    Atributos* getAtributos();
 
     //Sets
     void setQntMaxMovimentos(int qntMaxMovimentos);
     void setQntMovimentos(int qntMovimentos);
+    void setAtributos(Atributos atb);
 
 
     //Funções

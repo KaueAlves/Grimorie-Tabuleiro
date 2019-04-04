@@ -5,7 +5,6 @@
 #include "Posicao.h"
 #include "Componente.h"
 #include "Peca.h"
-#include "Componente.h"
 #include "Terreno.h"
 
 class Tabuleiro
