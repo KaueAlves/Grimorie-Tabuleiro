@@ -7,23 +7,27 @@ class Atributos
 {
 private:
     int hp;
-    int sp;
-    int forca;
-    int destreza;
-    int inteligencia;
+    int iniciativa;
+    int dano;
+    int tempoRecarga;
+    int alcance;
 public:
     Atributos(/* args */);
     Atributos(vector<int> atributos_valores);
     // Atributos(vector<Item> item,vector<Status>);
     ~Atributos();
     // Gets
-    int getForca();
-    int getDestreza();
-    int getInteligencia();
+    int getHP();
+    int getIniciativa();
+    int getDano();
+    int getTempoRecarga();
+    int getAlcance();
     // Sets
-    void setForca();
-    void setDestreza();
-    void setInteligencia();
+    void setHP(int hp);
+    void setIniciativa(int iniciativa);
+    void setDano(int dano);
+    void setTempoRecarga(int tempoRecarga);
+    void setAlcance(int alcance);
 };
 
 

@@ -14,7 +14,7 @@ class Peca : public Componente
 private:
     int qntMovimentos, qntMaxMovimentos;
     Info info;
-    //          Atributos atributos;
+    Atributos atributos;
 public:
     //Construtor - Destruidor
     Peca(pair<int,int> tamanho);
@@ -23,10 +23,13 @@ public:
     //Gets
     int getQntMaxMovimetnos();
     int getQntMovimentos();
+    Info getInfo();
+    Atributos* getAtributos();
 
     //Sets
     void setQntMaxMovimentos(int qntMaxMovimentos);
     void setQntMovimentos(int qntMovimentos);
+    void setAtributos(Atributos atb);
 
 
     //Funções

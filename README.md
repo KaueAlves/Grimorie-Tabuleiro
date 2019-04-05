@@ -44,38 +44,53 @@ Todas as pecas tem os seguintes atributos:
 
 O tabuleiro do jogo é simples, os campos " X " e " O " representam as posições inicias dos jogadores 1 e 2 respectivamente, enquanto o " - " representa o campo de batalha. 
 
-X X X        
-X X X
-- - -
-- - - 
-- - -
-- - -
-- - -
-- - - 
-- - -
-- - -
-O O O
-O O O
+    X X X        
+    X X X
+    - - -
+    - - - 
+    - - -
+    - - -
+    - - - 
+    - - -
+    - - - 
+    - - -
+    O O O
+    O O O
 
 ## Etapas do jogo
 
-1  - Jogador1 escolhe as classes de suas peças
-2  - Jogador2 escolhe as classes de suas peças 
-3  - Jogador1 coloca as pecas em campo
-4  - Jogador2 coloca as pecas em campo
-<!-- O ideal é que as etapas acima sejam ocultas entre jogadores -->
-5  - Ambos confirmam as escolhas
-<!-- Inicio -->
-6  - Verifica se existem pecas em campo
-7  - Percorre o campo efetuando o movimento das peças
-    7a - Inimigo no alcance ?
-    7b - Podem atacar?
-        7b1 - Tem tempo de recarga ?
-    7c - Podem mover ?
-    7d - Está no final ?
-8  - Contabiliza os danos
-9  - Contabiliza os pontos
-10 - Repete o Processo
+    1  - Jogador1 escolhe as classes de suas peças
+
+    2  - Jogador2 escolhe as classes de suas peças 
+
+    3  - Jogador1 coloca as pecas em campo
+
+    4  - Jogador2 coloca as pecas em campo
+
+    <!-- O ideal é que as etapas acima sejam ocultas entre jogadores -->
+
+    5  - Ambos confirmam as escolhas
+    
+    <!-- Inicio -->
+    6  - Verifica se existem pecas em campo
+
+    7  - Percorre o campo efetuando o movimento das peças
+
+        7a - Inimigo no alcance ?
+        
+        7b - Podem atacar?
+
+            7b1 - Tem tempo de recarga ?
+
+        7c - Podem mover ?
+
+        7d - Está no final ?
+
+    8  - Contabiliza os danos
+
+    9  - Contabiliza os pontos
+
+    10 - Repete o Processo
         
 
 
