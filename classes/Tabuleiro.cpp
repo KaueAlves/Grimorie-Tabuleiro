@@ -34,12 +34,12 @@ int Tabuleiro::getZ(){
     return this->z;
 }
 
-map<string,Componente*> Tabuleiro::getTabComp(){
+map<string,shared_ptr<Componente>> Tabuleiro::getTabComp(){
     return this->tab_comp;    
 }
 // Sets
 
-void Tabuleiro::setTabComp(map<string, Componente*> tab_comp){
+void Tabuleiro::setTabComp(map<string, shared_ptr<Componente>> tab_comp){
     this->tab_comp = tab_comp;
 }
 
@@ -74,7 +74,7 @@ void Tabuleiro::montarMatrix(){
 *   Return: booleano
 *   Descrição: Verifica se existe uma peça ocupando a posicao
 */
-bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
+bool Tabuleiro::adicionarPeca(Posicao pos, shared_ptr<Componente> componente){
     if(this->verificarOcupacao(pos)){
         componente->setPosicao(pos);
         this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = componente->especializacao;
@@ -93,9 +93,9 @@ bool Tabuleiro::adicionarPeca(Posicao pos, Componente* componente){
 *   Return: booleano
 *   Descrição: remove uma peca do tabuleiro
 */
-Componente* Tabuleiro::removerPeca(Posicao pos){
+shared_ptr<Componente> Tabuleiro::removerPeca(Posicao pos){
     if(!this->verificarOcupacao(pos)){
-        Componente* peca = this->tab_comp[pos.toString()];
+        shared_ptr<Componente> peca = this->tab_comp[pos.toString()];
         this->tabuleiro_tipo_componentes[pos.getX()][pos.getY()][pos.getZ()] = 0;
         removerMapEspecifico(tab_comp[pos.toString()]);
         this->tab_comp.erase(pos.toString());
@@ -114,7 +114,7 @@ Componente* Tabuleiro::removerPeca(Posicao pos){
 */
 bool Tabuleiro::moverPeca(Posicao ini, Posicao end){
     if(!this->verificarOcupacao(ini)){
-        Componente* comp_aux = this->removerPeca(ini);
+        shared_ptr<Componente> comp_aux = this->removerPeca(ini);
         adicionarPeca(end,comp_aux);
         return true;
     }else{
@@ -129,7 +129,7 @@ bool Tabuleiro::moverPeca(Posicao ini, Posicao end){
 *   Return: booleano
 *   Descrição: verifica uma peca no tabuleiro
 */
-Componente* Tabuleiro::verificarPeca(Posicao pos){
+shared_ptr<Componente> Tabuleiro::verificarPeca(Posicao pos){
     if(!this->verificarOcupacao(pos)){
         return this->tab_comp[to_string(pos.getX())+to_string(pos.getY())+to_string(pos.getZ())];
     }else{
@@ -182,9 +182,9 @@ string Tabuleiro::toString(){
     for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
     {
         output += "Level:" + to_string(++level) + "\n";
-        for(register int eixo_x = 0; eixo_x < this->x; eixo_x++)
+        for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
         {
-            for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
+            for(register int eixo_x = 0; eixo_x < this->x; eixo_x++)
             {
                 if(this->tabuleiro_tipo_componentes[eixo_x][eixo_y][eixo_z] > 0){
                     output += definirComponente(this->tab_comp[to_string(eixo_x) + to_string(eixo_y) + to_string(eixo_z)]);
@@ -199,17 +199,17 @@ string Tabuleiro::toString(){
 }
 
 
-string Tabuleiro::definirComponente(Componente* componente){
+string Tabuleiro::definirComponente(shared_ptr<Componente> componente){
     const Tipo_Componentes aux = componente->especializacao;
     switch (aux)
     {
         case Tipo_Componentes::comp_peca :
-            if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+            if(shared_ptr<Peca> ptr = dynamic_pointer_cast<Peca>(componente)){
                 return ptr->toString() + " ";
             }
             break;
         case Tipo_Componentes::comp_terreno :
-        if(Terreno *ptr = dynamic_cast<Terreno*>(componente)){
+        if(shared_ptr<Terreno> ptr = dynamic_pointer_cast<Terreno>(componente)){
             return ptr->toString() + " ";
         }
         break;
@@ -220,12 +220,12 @@ string Tabuleiro::definirComponente(Componente* componente){
     return "X";
 }
 
-void Tabuleiro::adicionarMapEspecifico(Componente* componente){
+void Tabuleiro::adicionarMapEspecifico(shared_ptr<Componente> componente){
     const Tipo_Componentes aux = componente->especializacao;
     switch (aux)
     {
         case Tipo_Componentes::comp_peca :
-            if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+            if(shared_ptr<Peca> ptr = dynamic_pointer_cast<Peca>(componente)){
                 this->tab_pecas.insert(make_pair(componente->getPosicao().toString(),ptr));
             }
             break;
@@ -240,7 +240,7 @@ void Tabuleiro::adicionarMapEspecifico(Componente* componente){
         //     }
         //     break;
         case Tipo_Componentes::comp_terreno :
-            if(Terreno *ptr = dynamic_cast<Terreno*>(componente)){
+            if(shared_ptr<Terreno> ptr = dynamic_pointer_cast<Terreno>(componente)){
                 this->tab_terrenos.insert(make_pair(componente->getPosicao().toString(),ptr));
             }
             break;
@@ -250,12 +250,12 @@ void Tabuleiro::adicionarMapEspecifico(Componente* componente){
     }
 }
 
-void Tabuleiro::removerMapEspecifico(Componente* componente){
+void Tabuleiro::removerMapEspecifico(shared_ptr<Componente> componente){
     const Tipo_Componentes aux = componente->especializacao;
-    switch (aux)
+    switch (aux) 
     {
         case Tipo_Componentes::comp_peca :
-            if(Peca *ptr = dynamic_cast<Peca*>(componente)){
+            if(shared_ptr<Peca> ptr = dynamic_pointer_cast<Peca>(componente)){
                 this->tab_pecas.erase(ptr->getPosicao().toString());
             }
             break;

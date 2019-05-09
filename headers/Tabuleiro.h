@@ -11,9 +11,9 @@ class Tabuleiro
 {
 private:
     int x,y,z;
-    map<string, Componente*> tab_comp;
-    map<string, Peca*> tab_pecas;
-    map<string, Terreno*> tab_terrenos;
+    map<string, shared_ptr<Componente>> tab_comp;
+    map<string, shared_ptr<Peca>> tab_pecas;
+    map<string, shared_ptr<Terreno>> tab_terrenos;
     // map<string, Obstaculos*> tab_obstaculos;
     // map<string, Item> tab_itens;
     vector<vector<vector<Peca>>> tabuleiro_peca;
@@ -28,20 +28,20 @@ public:
     int getX();
     int getY();
     int getZ();
-    map<string, Componente*> getTabComp();
+    map<string, shared_ptr<Componente>> getTabComp();
     // Sets
-    void setTabComp(map<string, Componente*>);
+    void setTabComp(map<string, shared_ptr<Componente>>);
     //Funções
     void montarMatrix();
     bool verificarOcupacao(Posicao pos);
     bool verificarPosicaoValida(Posicao pos);
-    bool adicionarPeca(Posicao pos, Componente *componente);
-    Componente* removerPeca(Posicao pos);
+    bool adicionarPeca(Posicao pos, shared_ptr<Componente> componente);
+    shared_ptr<Componente> removerPeca(Posicao pos);
     bool moverPeca(Posicao ini, Posicao end);
-    string definirComponente(Componente* componente);
-    void adicionarMapEspecifico(Componente* componente);
-    void removerMapEspecifico(Componente* componente);
-    Componente* verificarPeca(Posicao pos);
+    string definirComponente(shared_ptr<Componente> componente);
+    void adicionarMapEspecifico(shared_ptr<Componente> componente);
+    void removerMapEspecifico(shared_ptr<Componente> componente);
+    shared_ptr<Componente> verificarPeca(Posicao pos);
 
     string toString();
 };
