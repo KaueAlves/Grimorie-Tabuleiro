@@ -1,0 +1,425 @@
+﻿  Terreno.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+  Tabuleiro.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+  Posicao.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(31): error C2061: erro de sintaxe: identificador 'Posicao'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(32): error C2061: erro de sintaxe: identificador 'Posicao'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2061: erro de sintaxe: identificador 'Posicao'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2061: erro de sintaxe: identificador 'Posicao'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(35): error C2061: erro de sintaxe: identificador 'Posicao'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2061: erro de sintaxe: identificador 'Posicao'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\componente.h(11): error C3646: 'pos': especificador de substituição desconhecido
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\componente.h(11): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\componente.h(23): error C3646: 'getPosicao': especificador de substituição desconhecido
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\componente.h(23): error C2059: erro de sintaxe: '('
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\componente.h(23): error C2238: token(s) inesperado(s) precedendo ';'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\componente.h(31): error C2061: erro de sintaxe: identificador 'Posicao'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(29): error C2061: erro de sintaxe: identificador 'Posicao'
+  Peca.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\mago.h(6): error C2504: 'Peca': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\guerreiro.h(6): error C2504: 'Peca': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\arqueiro.h(6): error C2504: 'Peca': classe base indefinida
+  Mago.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+  Item.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+  Info.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(9): error C3646: 'info': especificador de substituição desconhecido
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(9): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(19): error C3646: 'getInfo': especificador de substituição desconhecido
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(19): error C2059: erro de sintaxe: '('
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(19): error C2238: token(s) inesperado(s) precedendo ';'
+  Guerreiro.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+  Grimorie-Tabuleiro.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+  CoreGrimorie.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+  Componente.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(6): error C2504: 'Componente': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\item.h(6): error C2504: 'Componente': classe base indefinida
+  Atributos.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(10): error C3646: 'atributos': especificador de substituição desconhecido
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(10): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(20): error C2143: erro de sintaxe: ';' ausente antes de '*'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(20): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(20): error C2238: token(s) inesperado(s) precedendo ';'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\peca.h(25): error C2061: erro de sintaxe: identificador 'Atributos'
+  Arqueiro.cpp
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(9): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C2923: 'std::shared_ptr': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(10): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2065: 'Terreno': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C2923: 'std::shared_ptr': 'Terreno' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(11): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2065: 'Peca': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C2923: 'std::vector': 'Peca' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'allocator': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Alloc', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(14): error C3203: 'vector': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(26): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(28): error C3203: 'shared_ptr': uma classe modelo não especializada não pode ser usada como argumento modelo para o parâmetro modelo '_Ty', tipo real esperado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(33): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(34): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(36): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(37): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(38): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2065: 'Componente': identificador não declarado
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\tabuleiro.h(39): error C2923: 'std::shared_ptr': 'Componente' não é um argumento de tipo de modelo válido para parâmetro '_Ty'
+c:\users\kauen\source\repos\grimorie-tabuleiro\grimorie-tabuleiro\terreno.h(6): error C2504: 'Componente': classe base indefinida
+  Gerando Código...
