@@ -1,11 +1,5 @@
 #include "headers/Default.h"
-#include "headers/Tabuleiro.h"
-#include "headers/Posicao.h"
-#include "headers/Terreno.h"
-#include "headers/Peca.h"
-#include "headers/pecas/Guerreiro.h"
-#include "headers/pecas/Mago.h"
-#include "headers/pecas/Arqueiro.h"
+#include "headers/grimorieCore.h"
 
 int main(){
 
