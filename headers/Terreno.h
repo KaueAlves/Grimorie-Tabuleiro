@@ -2,7 +2,6 @@
 #define TERRENO_H
 
 #include "Default.h"
-#include "Posicao.h"
 #include "Componente.h"
 
 class Terreno : public Componente
