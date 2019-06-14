@@ -43,11 +43,11 @@ void Tabuleiro::montarMatrix(){
     vector<vector<int>> matriz_tipos_yz;
     vector<int> matriz_tipos_z;
 
-    for (register int eixo_x = 0; eixo_x < this->x; eixo_x++)
+    for ( int eixo_x = 0; eixo_x < this->x; eixo_x++)
     {
-        for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
+        for( int eixo_y = 0; eixo_y < this->y; eixo_y++)
         {
-            for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
+            for( int eixo_z = 0; eixo_z < this->z; eixo_z++)
             {
                 matriz_tipos_z.push_back(0);
             }
@@ -173,12 +173,12 @@ bool Tabuleiro::verificarPosicaoValida(Posicao pos){
 string Tabuleiro::toString(){
     int level = 0;
     string output;
-    for(register int eixo_z = 0; eixo_z < this->z; eixo_z++)
+    for( int eixo_z = 0; eixo_z < this->z; eixo_z++)
     {
         output += "Level:" + to_string(++level) + "\n";
-        for(register int eixo_y = 0; eixo_y < this->y; eixo_y++)
+        for( int eixo_y = 0; eixo_y < this->y; eixo_y++)
         {
-            for(register int eixo_x = 0; eixo_x < this->x; eixo_x++)
+            for( int eixo_x = 0; eixo_x < this->x; eixo_x++)
             {
                 if(this->tabuleiro_tipo_componentes[eixo_x][eixo_y][eixo_z] > 0){
                     output += definirComponente(this->tab_comp[to_string(eixo_x) + to_string(eixo_y) + to_string(eixo_z)]);
