@@ -1,9 +1,10 @@
 #include "headers/Default.h"
-#include "headers/grimorieCore.h"
+#include "headers/Jogo.h"
 
 int main(){
 
     // Tabuleiro
+    
     shared_ptr<Tabuleiro> tab(new Tabuleiro(12,3,1));
     // Time 1
     shared_ptr<Guerreiro> guer1(new Guerreiro(make_pair(1,1)));
