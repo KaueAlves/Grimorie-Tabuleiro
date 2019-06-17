@@ -2,17 +2,23 @@
 #define JOGO_H
 
 #include "default.h"
+
 #include "GrimorieCore.h"
 
 class Jogo
 {
 private:
-    Tabuleiro tab;
+    shared_ptr<Tabuleiro> tab;
 public:
-    Jogo(Tabuleiro tab);
+    Jogo(shared_ptr<Tabuleiro>& tab);
     ~Jogo();
 
-    Tabuleiro getTabuleiro();
+    shared_ptr<Tabuleiro> getTabuleiro();
+    void colocarTime1();
+    void colocarTime2();
+    void escolherTime1();
+    void escolherTime2();
+    
 };
 
 #endif // JOGO_H
