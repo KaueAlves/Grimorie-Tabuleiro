@@ -12,12 +12,12 @@ int main(){
     jogo->getTabuleiro()->montarMatrix();
 
     // Colocando times Base
-    jogo->colocarTime1();
-    jogo->colocarTime2();
+    // jogo->colocarTime1();
+    // jogo->colocarTime2();
 
     // Escolhendo times
-    // jogo->escolherTime1();
-    // jogo->escolherTime2();
+     jogo->escolherTime1();
+     jogo->escolherTime2();
 
     cout << jogo->getTabuleiro()->toString();
 
