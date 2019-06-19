@@ -1,9 +1,10 @@
 #include "../headers/Peca.h"
 
-Peca::Peca(pair<int,int> tamanho):Componente(1,"Peca","Peca",make_pair(1,1)){
+Peca::Peca(pair<int,int> tamanho, Times_Jogo time):Componente(1,"Peca","Peca",make_pair(1,1)){
     this->mark = "P";
     this->tamanho = tamanho;
     this->especializacao = Tipo_Componentes::comp_peca;
+    this->time = time;
 };
 Peca::~Peca(){}
 
@@ -23,6 +24,10 @@ Info Peca::getInfo(){
 
 Atributos* Peca::getAtributos(){
     return &this->atributos;
+}
+
+Times_Jogo Peca::getTime(){
+    return this->time;
 }
 
 //Sets

@@ -1,7 +1,7 @@
 #include "../../headers/pecas/Guerreiro.h"
 
 //Construtores 
-Guerreiro::Guerreiro(pair<int,int> tamanho):Peca(tamanho){
+Guerreiro::Guerreiro(pair<int,int> tamanho,Times_Jogo time):Peca(tamanho,time){
     Atributos* atb = this->getAtributos();
     atb->setHP(6);
     atb->setDano(4);

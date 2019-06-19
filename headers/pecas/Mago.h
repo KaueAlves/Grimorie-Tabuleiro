@@ -11,7 +11,7 @@ private:
 public:
     Mago();
     ~Mago();
-    Mago(pair<int,int> tamanho);
+    Mago(pair<int,int> tamanho,Times_Jogo time);
     string toString();
 };
 

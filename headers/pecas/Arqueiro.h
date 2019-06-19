@@ -11,7 +11,7 @@ private:
 public:
     Arqueiro();
     ~Arqueiro();
-    Arqueiro(pair<int,int> tamanho);
+    Arqueiro(pair<int,int> tamanho,Times_Jogo time);
     string toString();
 };
 

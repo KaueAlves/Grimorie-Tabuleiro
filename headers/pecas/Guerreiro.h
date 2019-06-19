@@ -11,7 +11,7 @@ private:
 public:
     Guerreiro();
     ~Guerreiro();
-    Guerreiro(pair<int,int> tamanho);
+    Guerreiro(pair<int,int> tamanho,Times_Jogo time);
     string toString();
 };
 

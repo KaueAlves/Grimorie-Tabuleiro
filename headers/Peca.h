@@ -15,14 +15,16 @@ private:
     int qntMovimentos, qntMaxMovimentos;
     Info info;
     Atributos atributos;
+    Times_Jogo time;
 public:
     //Construtor - Destruidor
-    Peca(pair<int,int> tamanho);
+    Peca(pair<int,int> tamanho,Times_Jogo time);
     virtual ~Peca();
     
     //Gets
     int getQntMaxMovimetnos();
     int getQntMovimentos();
+    Times_Jogo getTime();
     Info getInfo();
     Atributos* getAtributos();
 

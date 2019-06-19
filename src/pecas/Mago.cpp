@@ -1,7 +1,7 @@
 #include "../../headers/pecas/Mago.h"
 
 //Construtores 
-Mago::Mago(pair<int,int> tamanho):Peca(tamanho){
+Mago::Mago(pair<int,int> tamanho,Times_Jogo time):Peca(tamanho,time){
     Atributos* atb = this->getAtributos();
     atb->setHP(4);
     atb->setDano(6);
