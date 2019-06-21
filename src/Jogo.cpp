@@ -147,3 +147,7 @@ void Jogo::escolherTime2(){
     }
 
 }
+
+void Jogo::movimentarPeca(){
+    this->tab->getTabComp();
+}

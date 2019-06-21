@@ -18,6 +18,7 @@ public:
     void colocarTime2();
     void escolherTime1();
     void escolherTime2();
+    void movimentarPeca();
     
 };
 

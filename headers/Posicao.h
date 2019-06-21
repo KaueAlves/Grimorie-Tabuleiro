@@ -16,6 +16,7 @@ public:
     int getX();
     int getY();
     int getZ();
+    void addPosicao(int x, int y, int z);
     string toString();
 };
 

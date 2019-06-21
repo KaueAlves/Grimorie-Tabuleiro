@@ -31,6 +31,10 @@ int Tabuleiro::getZ(){
 map<string,shared_ptr<Componente>> Tabuleiro::getTabComp(){
     return this->tab_comp;    
 }
+
+map<string, shared_ptr<Peca>> Tabuleiro::getTabPeca(){
+    return this->tab_pecas;
+}
 // Sets
 
 void Tabuleiro::setTabComp(map<string, shared_ptr<Componente>> tab_comp){
@@ -104,15 +108,15 @@ shared_ptr<Componente> Tabuleiro::removerPeca(Posicao pos){
 *   Tabuleiro::moverPeca(Posicao pos)
 *   Param: objPosicao
 *   Return: booleano
-*   Descrição: remove uma peca do tabuleiro
+*   Descrição: remove uma peca do tabuleiro e a realoca caso não aja um obstaculo
 */
 bool Tabuleiro::moverPeca(Posicao ini, Posicao end){
-    if(!this->verificarOcupacao(ini)){
+    if(!this->verificarOcupacao(ini) && this->verificarOcupacao(end)){
         shared_ptr<Componente> comp_aux = this->removerPeca(ini);
         adicionarPeca(end,comp_aux);
         return true;
     }else{
-        cout << endl <<  "Nao existe uma peca a ser movida" << endl;
+        cout << endl <<  "Nao existe uma peca a ser movida | Existe um bloqueio" << endl;
     }
     return false;
 }
@@ -144,10 +148,6 @@ bool Tabuleiro::verificarOcupacao(Posicao pos){
             return true; 
         }
     }
-    // cout << "Celula nao disponivel ou ocupada." << endl;
-    // cout << "Z: " << pos.getZ() << endl;
-    // cout << "X: " << pos.getX() << endl;
-    // cout << "Y: " << pos.getY() << endl << endl;
     return false;
 }
 

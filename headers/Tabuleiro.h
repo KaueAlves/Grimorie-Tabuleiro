@@ -28,6 +28,7 @@ public:
     int getX();
     int getY();
     int getZ();
+    map<string, shared_ptr<Peca>> getTabPeca();
     map<string, shared_ptr<Componente>> getTabComp();
     // Sets
     void setTabComp(map<string, shared_ptr<Componente>>);
